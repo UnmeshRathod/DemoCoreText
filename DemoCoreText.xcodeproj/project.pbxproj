@@ -12,6 +12,12 @@
 		A614C36422CE0A6900420005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A614C36222CE0A6900420005 /* Main.storyboard */; };
 		A614C36622CE0A6B00420005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A614C36522CE0A6B00420005 /* Assets.xcassets */; };
 		A614C36922CE0A6B00420005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A614C36722CE0A6B00420005 /* LaunchScreen.storyboard */; };
+		A614C37122CE0AAB00420005 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614C37022CE0AAB00420005 /* SampleView.swift */; };
+		A641DA4422CE262D0071E973 /* zombies.txt in Resources */ = {isa = PBXBuildFile; fileRef = A641DA4022CE262D0071E973 /* zombies.txt */; };
+		A641DA4522CE262D0071E973 /* zombie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A641DA4122CE262D0071E973 /* zombie1.jpg */; };
+		A641DA4622CE262D0071E973 /* zombie2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A641DA4222CE262D0071E973 /* zombie2.jpg */; };
+		A641DA4722CE262D0071E973 /* zombie3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A641DA4322CE262D0071E973 /* zombie3.jpg */; };
+		A641DA4922CE26B80071E973 /* MarkupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A641DA4822CE26B80071E973 /* MarkupParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		A614C36522CE0A6B00420005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A614C36822CE0A6B00420005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A614C36A22CE0A6B00420005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A614C37022CE0AAB00420005 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		A641DA4022CE262D0071E973 /* zombies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zombies.txt; sourceTree = "<group>"; };
+		A641DA4122CE262D0071E973 /* zombie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zombie1.jpg; sourceTree = "<group>"; };
+		A641DA4222CE262D0071E973 /* zombie2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zombie2.jpg; sourceTree = "<group>"; };
+		A641DA4322CE262D0071E973 /* zombie3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zombie3.jpg; sourceTree = "<group>"; };
+		A641DA4822CE26B80071E973 /* MarkupParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,28 @@
 		A614C35D22CE0A6900420005 /* DemoCoreText */ = {
 			isa = PBXGroup;
 			children = (
+				A641DA3F22CE262D0071E973 /* Content */,
 				A614C35E22CE0A6900420005 /* AppDelegate.swift */,
 				A614C36022CE0A6900420005 /* ViewController.swift */,
 				A614C36222CE0A6900420005 /* Main.storyboard */,
 				A614C36522CE0A6B00420005 /* Assets.xcassets */,
 				A614C36722CE0A6B00420005 /* LaunchScreen.storyboard */,
 				A614C36A22CE0A6B00420005 /* Info.plist */,
+				A614C37022CE0AAB00420005 /* SampleView.swift */,
+				A641DA4822CE26B80071E973 /* MarkupParser.swift */,
 			);
 			path = DemoCoreText;
+			sourceTree = "<group>";
+		};
+		A641DA3F22CE262D0071E973 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				A641DA4022CE262D0071E973 /* zombies.txt */,
+				A641DA4122CE262D0071E973 /* zombie1.jpg */,
+				A641DA4222CE262D0071E973 /* zombie2.jpg */,
+				A641DA4322CE262D0071E973 /* zombie3.jpg */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +150,11 @@
 			files = (
 				A614C36922CE0A6B00420005 /* LaunchScreen.storyboard in Resources */,
 				A614C36622CE0A6B00420005 /* Assets.xcassets in Resources */,
+				A641DA4422CE262D0071E973 /* zombies.txt in Resources */,
 				A614C36422CE0A6900420005 /* Main.storyboard in Resources */,
+				A641DA4622CE262D0071E973 /* zombie2.jpg in Resources */,
+				A641DA4522CE262D0071E973 /* zombie1.jpg in Resources */,
+				A641DA4722CE262D0071E973 /* zombie3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A614C36122CE0A6900420005 /* ViewController.swift in Sources */,
+				A614C37122CE0AAB00420005 /* SampleView.swift in Sources */,
+				A641DA4922CE26B80071E973 /* MarkupParser.swift in Sources */,
 				A614C35F22CE0A6900420005 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,13 +317,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WZ3H873AV;
 				INFOPLIST_FILE = DemoCoreText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unmeshrathod.DemoCoreText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,13 +336,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WZ3H873AV;
 				INFOPLIST_FILE = DemoCoreText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unmeshrathod.DemoCoreText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
